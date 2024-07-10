@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Page Not Found</title>
-    <meta http-equiv="refresh" content="0; URL=./#/" />
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="./#/landingPage/resume/">link</a>.</p>
+    <script type="text/javascript">
+      // Redirecciona a la página principal, manteniendo la ruta en la URL
+      var redirectUrl = window.location.protocol + "//" + window.location.host + "/#" + window.location.pathname + window.location.search;
+      window.location.replace(redirectUrl);
+    </script>
+    <p>If you are not redirected automatically, follow this <a href="./">link</a>.</p>
   </body>
 </html>
